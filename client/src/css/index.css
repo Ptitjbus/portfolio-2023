@@ -1,0 +1,143 @@
+:root {
+  --blue: #0000ff;
+  --white: #fff;
+  --black: #1c1c1c;
+  --grey: #ababab;
+  --lightgrey: #d9d9d9;
+  --orange: #FF6B00;
+
+  font-family: Geologica, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--black);
+  background-color: var(--white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: Geologica;
+  src: url(../assets/fonts/Geologica.ttf);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+h1 {
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+::placeholder {
+  color: var(--grey);
+}
+
+input {
+  margin: 0px 10px;
+  background-color: var(--grey);
+  color: var(--black);
+  border: none;
+  height: 30px;
+  font-size: large;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 7px;
+}
+
+input:focus {
+  outline: none;
+  background-color: var(--lightgrey);
+}
+
+select {
+  margin: 0px 10px;
+  background-color: var(--grey);
+  color: var(--black);
+  border: none;
+  height: 44px;
+  font-size: large;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 7px;
+  appearance: none;
+}
+
+select:focus {
+  outline: none;
+  background-color: var(--lightgrey);
+}
+
+textarea {
+  margin: 0;
+  background-color: var(--grey);
+  color: var(--black);
+  border: none;
+  height: 44px;
+  font-size: large;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  padding: 7px;
+  appearance: none;
+  resize: none;
+  width: calc(100% - 14px);
+  margin-bottom: 10px;
+}
+
+textarea:focus {
+  outline: none;
+  background-color: var(--lightgrey);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: bold;
+  font-size: large;
+  padding: 1vh 1vw;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btn-s {
+  background-color: var(--lightgrey);
+  color: var(--grey);
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

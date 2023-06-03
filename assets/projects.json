@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "Projet Portfolio",
+        "descriptionS": "Création d'un site web portfolio",
+        "descriptionL": "Durant ma deuxième année de DUT, j'ai conçu un site portfolio pour présenter mon parcours académique, mes compétences, projets et expériences personnelles. J'ai utilisé diverses bibliothèques, telles que tree.js pour l'incrustation 3D, FontAwesome pour les icônes, et Full-Page pour un défilement fluide. J'ai accordé une attention particulière à la disposition des éléments et à l'esthétique du site, avec une prédominance de bleu, une one-page avec navigation latérale et un thème sombre pour le confort du visiteur. C’est le premier site que j’ai hébergé ce qui m’a permis de comprendre de nombreux fonctionnements sur ce domaine.",
+        "imageFolderName": "portfolio",
+        "date": "2021",
+        "type": "site web",
+        "tags": [
+            "html",
+            "css",
+            "javascript",
+            "three.js",
+            "fullpage.js"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Reproduction du site de la Fnac",
+        "descriptionS": "Reproduction du site de la Fnac sous Laravel",
+        "descriptionL": "",
+        "imageFolderName": "fnac",
+        "date": "2021",
+        "type": "site web",
+        "tags": [
+            "html",
+            "css",
+            "javascript",
+            "php",
+            "laravel",
+            "sql",
+            "méthode agile",
+            "gitHub"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Projet OLC",
+        "descriptionS": "Réalisation d'une application web sous Laravel",
+        "descriptionL": "",
+        "imageFolderName": "olc",
+        "date": "2022",
+        "type": "application  web",
+        "tags": [
+            "html",
+            "css",
+            "javascript",
+            "php",
+            "laravel",
+            "sql",
+            "méthode agile",
+            "design",
+            "gitHub"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "L'âne school",
+        "descriptionS": "Création d'un jeu vidéo avec Unity",
+        "descriptionL": "",
+        "imageFolderName": "lan_school",
+        "date": "2022",
+        "type": "jeu vidéo",
+        "tags": [
+            "C#",
+            "unity",
+            "gitHub",
+            "blender"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Ski passion",
+        "descriptionS": "Création d'un site web en équipe",
+        "descriptionL": "",
+        "imageFolderName": "ski_passion",
+        "date": "2021",
+        "type": "site web",
+        "tags": [
+            "html",
+            "css",
+            "javascript",
+            "fileZilla"
+        ]
+    },
+    {
+        "id": 0,
+        "title": "StarClean",
+        "descriptionS": "Création d'un site web de data-visualisation en équipe",
+        "descriptionL": "",
+        "imageFolderName": "starclean",
+        "date": "2023",
+        "type": "site web",
+        "tags": [
+            "html",
+            "css",
+            "javascript",
+            "cesium"
+        ]
+    }
+]

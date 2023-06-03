@@ -1,0 +1,53 @@
+.content-container {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 50vh;
+    min-width: 70vw;
+}
+
+.contact-text {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.contact-text>p {
+    /* margin: 0; */
+    align-content: baseline;
+    color: var(--black);
+    font-weight: bold;
+    font-size: large;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 850px) {
+    .form-footer {
+        display: flex;
+        justify-content: center !important;
+        margin-bottom: 20%;
+    }
+}
+
+.classic>input {
+    margin: 10px 0;
+    background-color: var(--lightgrey);
+}
+
+.classic>textarea {
+    margin: 10px 0;
+    background-color: var(--lightgrey);
+    height: auto;
+}
+
+.minText {
+    color: var(--lightgrey);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-top: 0;
+}
