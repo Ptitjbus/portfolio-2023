@@ -14,7 +14,15 @@
   "engines": {
     "node": "19.x"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heroku/node-js-getting-started"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "author": "Mathis Viollet",
   "license": "ISC",
   "dependencies": {
