@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './css/ProjectsPage.css';
 import CrossComponent from './components/CrossComponent';
-import ProjecMiniature from './components/projectMiniature';
+import ProjecMiniature from './components/ProjectMiniature';
 import { useLoaderData, Link } from 'react-router-dom';
 
 export default function MyComponent() {
