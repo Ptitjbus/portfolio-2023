@@ -1,16 +1,21 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
+  "description": "portfolio 2023 react + express",
   "main": "server.js",
   "scripts": {
     "start": "node server",
     "dev": "nodemon server",
     "client": "cd client && npm run dev",
-    "build": "cd client && npm run build"
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "engines": {
+    "node": "19.x"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mathis Viollet",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
