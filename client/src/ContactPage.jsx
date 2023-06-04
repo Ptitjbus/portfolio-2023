@@ -132,7 +132,7 @@ export default function ContactPage() {
         }
 
         setRequestSended(true)
-        fetch("http://localhost:5000/sendMail", {
+        fetch("/sendMail", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
