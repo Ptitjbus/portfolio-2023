@@ -15,6 +15,9 @@ export default function ProjectDetails() {
     const data = useLoaderData()
     const [shouldNavigate, setShouldNavigate] = useState(false);
 
+    const getYear = (date) => {
+        return date.split("-")[0]
+    }
 
     useEffect(() => {
         if (!data) {
@@ -42,7 +45,7 @@ export default function ProjectDetails() {
                     </svg>
                     Retour aux projets
                 </Link>
-                <h1>{data.object.title}</h1>
+                <h1>{data.name}</h1>
                 <div className='project-details-container'>
                     <div className='image-container'>
                         <div className='carre'>
@@ -53,9 +56,9 @@ export default function ProjectDetails() {
                                 loop={true}
                                 navigation
                             >
-                                {data.imageFiles.map((item) => (
+                                {data.gallery.data.map((item) => (
                                     <SwiperSlide>
-                                        <img src={`/public/images/details/${data.object.imageFolderName}/${item}`} alt={item} />
+                                        <img src={`${window.baseUrl}${item.attributes.url}`} alt={item.name} />
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
@@ -63,15 +66,15 @@ export default function ProjectDetails() {
                         </div>
                     </div>
                     <div className='projet-informations'>
-                        <h2>{data.object.date}</h2>
-                        <p className='large-description'>{data.object.descriptionL}</p>
+                        <h2>{getYear(data.date)}</h2>
+                        <p className='large-description'>{data.description}</p>
                         <div className='legend'>
                             <div>
-                                <h3>Type : {data.object.type}</h3>
+                                <h3>Type : {data.category}</h3>
                             </div>
                             <div className='tags-container'>
-                                {data.object.tags.map((item) => (
-                                    < TagComponent key={item} name={item} />
+                                {data.tags.data.map((item) => (
+                                    < TagComponent key={item.attributes.name} name={item.attributes.name} />
                                 ))}
                             </div>
                         </div>
@@ -85,13 +88,22 @@ export default function ProjectDetails() {
 
 export const loadProjectData = async ({ params }) => {
     const { id } = params
-    const validIds = ['0', '1', '2', '3', '4', '5'];
+    let results = await fetch(`${window.baseUrl}/api/projects?populate=*`)
+    let data = await results.json();
+    let projects = data.data
+
+    const validIds = [];
+
+    for (let project of projects) {
+        validIds.push(project.id.toString())
+    }
 
     if (!validIds.includes(id)) {
         return null;
     }
 
-    let results = await fetch(`/getProject/${id}`)
 
-    return results
+    let currentProject = projects.find(item => item.id === parseInt(id));
+
+    return currentProject.attributes
 }

@@ -7,14 +7,18 @@
     "start": "node server",
     "dev": "nodemon server",
     "client": "cd client && npm run dev",
-    "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build"
+    "heroku-postbuild": "npm run install-client && npm run build",
+    "build": "cd client && npm run build"
   },
   "engines": {
     "node": "19.x"
   },
-  "keywords": [],
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
   "author": "Mathis Viollet",
   "license": "ISC",
   "dependencies": {
@@ -26,6 +30,8 @@
     "nodemailer": "^6.9.2"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "@vitejs/plugin-react": "^4.0.0",
+    "nodemon": "^2.0.22",
+    "vite": "^4.3.9"
   }
 }

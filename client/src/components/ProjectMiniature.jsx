@@ -4,7 +4,7 @@ export default function ProjecMiniature(props) {
         <>
             <div className="project">
                 <div className="cube">
-                    <img src={`/public/images/covers/${props.info.imageFolderName}.png`} alt={props.info.title} />
+                    <img src={`${window.baseUrl}${props.info.attributes.cover.data.attributes.url}`} alt={props.info.attributes.name} />
                 </div>
             </div>
         </>
