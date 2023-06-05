@@ -7,7 +7,7 @@ import ProjectDetails, { loadProjectData } from './ProjectDetails'
 import ProjectsPage, { loadProjectsData } from './ProjectsPage'
 import Error404Page from './Error404Page'
 
-window.baseUrl = 'https://mysterious-atoll-84798.herokuapp.com/';
+window.baseUrl = 'https://mysterious-atoll-84798.herokuapp.com';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
