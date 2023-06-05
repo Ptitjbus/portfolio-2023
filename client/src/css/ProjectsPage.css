@@ -1,0 +1,32 @@
+.projects-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    position: relative;
+    display: flex;
+    z-index: 2;
+}
+
+.cube {
+    height: 300px;
+    width: 300px;
+    background-color: var(--lightgrey);
+    margin: 25px;
+    display: block;
+    position: relative;
+    max-width: 90%;
+}
+
+.cube img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100% !important;
+    z-index: 2;
+    object-fit: cover;
+}

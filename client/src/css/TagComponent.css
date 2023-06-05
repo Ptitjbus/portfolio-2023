@@ -1,0 +1,8 @@
+.tag {
+    padding: 5px 10px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: bold;
+    margin: 5px;
+    text-transform: uppercase;
+}
