@@ -26,8 +26,7 @@ export default function MyComponent() {
 };
 
 export const loadProjectsData = async () => {
-    let response = await fetch('/getProjects')
-
-    console.log(response);
-    return response
+    let response = await fetch(`${window.baseUrl}/api/projects?populate=*&sort=date:DESC`)
+    let data = await response.json();
+    return data.data
 }
