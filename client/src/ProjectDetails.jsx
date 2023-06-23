@@ -58,7 +58,7 @@ export default function ProjectDetails() {
                             >
                                 {data.gallery.data.map((item) => (
                                     <SwiperSlide>
-                                        <img src={`${window.baseUrl}${item.attributes.url}`} alt={item.name} />
+                                        <img src={`${item.attributes.url}`} alt={item.name} />
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
