@@ -1,5 +1,5 @@
 :root {
-  --blue: #0000ff;
+  --blue: #1160df;
   --white: #fff;
   --black: #1c1c1c;
   --grey: #ababab;
@@ -140,4 +140,10 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+@media (max-width: 850px) {
+  button {
+    padding: 2vh 2vw;
+  }
 }
