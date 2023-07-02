@@ -70,7 +70,7 @@ export default function ProjectDetails() {
                         <p className='large-description'>{data.description}</p>
                         <div className='legend'>
                             <div>
-                                <h3>Type : {data.category}</h3>
+                                <h3>Type : {data.category.data.attributes.name}</h3>
                             </div>
                             <div className='tags-container'>
                                 {data.tags.data.map((item) => (
