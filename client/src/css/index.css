@@ -112,6 +112,7 @@ a {
 
 button {
   border: none;
+  border-radius: 0.225rem;
   background-color: var(--blue);
   color: var(--white);
   font-weight: bold;
@@ -119,6 +120,10 @@ button {
   padding: 1vh 1vw;
   margin: 0 10px;
   transition: all 0.3s ease;
+}
+
+button>i {
+  margin-right: 0.5vw;
 }
 
 button:hover {
@@ -142,8 +147,21 @@ button:hover {
   justify-content: center;
 }
 
+.lazy-image {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.lazy-image.fade {
+  opacity: 1;
+}
+
 @media (max-width: 850px) {
   button {
-    padding: 2vh 2vw;
+    padding: 1vh 2vw;
+  }
+
+  button>i {
+    margin-right: 2vw;
   }
 }

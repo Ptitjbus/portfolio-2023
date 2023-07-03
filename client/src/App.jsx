@@ -6,6 +6,7 @@ import ContactPage from './ContactPage'
 import ProjectDetails, { loadProjectData } from './ProjectDetails'
 import ProjectsPage, { loadProjectsData } from './ProjectsPage'
 import Error404Page from './Error404Page'
+import ProfilePage from './ProfilePage';
 
 window.baseUrl = 'https://mysterious-atoll-84798.herokuapp.com';
 
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
       <Route path="/projects/:id" element={< ProjectDetails />} loader={loadProjectData} />
       <Route path="/projects" element={<ProjectsPage />} loader={loadProjectsData} />
       <Route path="/contact" element={<ContactPage />} />
+      <Route path="/profile" element={<ProfilePage />} />
       <Route path="*" element={<Error404Page />} />
     </Route>
   )

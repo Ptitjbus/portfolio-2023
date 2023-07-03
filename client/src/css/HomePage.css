@@ -9,10 +9,6 @@
     /* font-size: xx-large; */
 }
 
-.blue-text {
-    color: var(--blue);
-}
-
 .menu-list {
     list-style: none;
     text-transform: uppercase;
@@ -33,6 +29,12 @@
 
 .blue-text {
     transition: all 0.3s ease-out;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.blue-text:hover {
+    filter: blur(1px);
 }
 
 @media (max-width: 850px) {

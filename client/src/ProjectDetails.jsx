@@ -62,7 +62,6 @@ export default function ProjectDetails() {
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
-
                         </div>
                     </div>
                     <div className='projet-informations'>
