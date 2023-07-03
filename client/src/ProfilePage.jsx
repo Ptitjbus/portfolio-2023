@@ -56,6 +56,18 @@ export default function ProfilePage() {
                                     LinkedIn
                                 </button>
                             </a>
+                            <a href="https://res.cloudinary.com/dau53hmfi/image/upload/v1688414786/CV_Mathis_VIOLLET_e576bbc080.pdf" target="_blank" rel="noopener noreferrer">
+                                <button>
+                                    <i class="bi bi-file-person"></i>
+                                    CV
+                                </button>
+                            </a>
+                            <a href="https://res.cloudinary.com/dau53hmfi/image/upload/v1688414785/book_Mathis_VIOLLET_0f89c38070.pdf" target="_blank" rel="noopener noreferrer">
+                                <button>
+                                    <i class="bi bi-book"></i>
+                                    Book
+                                </button>
+                            </a>
                         </div>
                     </div>
 
