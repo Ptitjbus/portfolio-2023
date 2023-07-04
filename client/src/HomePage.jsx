@@ -22,10 +22,11 @@ export default function HomePage() {
             {showPopup && <Popup setShowPopup={setShowPopup} />}
             <div className="card">
                 <h1 className="intro-sentence">
-                    Je suis <Link to="/profile"><strong className='blue-text'>mathis viollet</strong></Link>, <br />developpeur web.
+                    Je suis <strong className='blue-text'>mathis viollet</strong>, <br />developpeur web.
                 </h1>
                 <ul className="menu-list">
                     <li><Link to="/projects">voir mes projets</Link></li>
+                    <li><Link to="/profile">à propos</Link></li>
                     <li><Link to="/contact">me contacter</Link></li>
                 </ul>
             </div >

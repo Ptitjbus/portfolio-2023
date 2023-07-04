@@ -34,10 +34,16 @@
 .social-medias {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .profile-description {
     margin-bottom: 5vh;
+}
+
+.social-media-button {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
 
 @media (max-width: 850px) {

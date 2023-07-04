@@ -6,6 +6,7 @@
 .intro-sentence {
     text-transform: uppercase;
     font-weight: bold;
+    cursor: default;
     /* font-size: xx-large; */
 }
 
@@ -30,7 +31,6 @@
 .blue-text {
     transition: all 0.3s ease-out;
     color: var(--blue);
-    cursor: pointer;
 }
 
 .blue-text:hover {

@@ -45,25 +45,25 @@ export default function ProfilePage() {
                         </div>
                         <div className='social-medias'>
                             <a href="https://github.com/Ptitjbus" target="_blank" rel="noopener noreferrer">
-                                <button>
+                                <button className='social-media-button'>
                                     <i className="bi bi-github"></i>
                                     GitHub
                                 </button>
                             </a>
                             <a href="https://www.linkedin.com/in/mathis-viollet/" target="_blank" rel="noopener noreferrer">
-                                <button>
+                                <button className='social-media-button'>
                                     <i className="bi bi-linkedin"></i>
                                     LinkedIn
                                 </button>
                             </a>
                             <a href="https://res.cloudinary.com/dau53hmfi/image/upload/v1688414786/CV_Mathis_VIOLLET_e576bbc080.pdf" target="_blank" rel="noopener noreferrer">
-                                <button>
+                                <button className='social-media-button'>
                                     <i class="bi bi-file-person"></i>
                                     CV
                                 </button>
                             </a>
                             <a href="https://res.cloudinary.com/dau53hmfi/image/upload/v1688414785/book_Mathis_VIOLLET_0f89c38070.pdf" target="_blank" rel="noopener noreferrer">
-                                <button>
+                                <button className='social-media-button'>
                                     <i class="bi bi-book"></i>
                                     Book
                                 </button>
