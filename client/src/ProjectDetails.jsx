@@ -65,7 +65,12 @@ export default function ProjectDetails() {
                         </div>
                     </div>
                     <div className='projet-informations'>
-                        <h2>{getYear(data.date)}</h2>
+                        <div className='projet-topInformations'>
+                            <h2>{getYear(data.date)}</h2>
+                            {data.project_link.data !== null && (
+                                <a href={data.project_link.data.attributes.link}>Lien du projet <i class="bi bi-link-45deg"></i></a>
+                            )}
+                        </div>
                         <p className='large-description'>{data.description}</p>
                         <div className='legend'>
                             <div>

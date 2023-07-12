@@ -98,6 +98,17 @@ body {
     margin-right: 5px;
 }
 
+.projet-topInformations {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.projet-topInformations>h2 {
+    margin: 0;
+}
+
 
 @media (max-width: 850px) {
 
